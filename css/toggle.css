@@ -1,0 +1,59 @@
+/* Container for the toggle button */
+.theme-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Centers the button vertically */
+}
+
+/* Toggle switch wrapper */
+.toggle-switch {
+    width: 60px;
+    height: 30px;
+    background-color: #f5f5f5; /* Light background */
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+/* The slider (movable circle) */
+.toggle-slider {
+    width: 20px;
+    height: 20px;
+    background-color: #ffc107; /* Yellowish color for the sun */
+    border-radius: 50%;
+    position: absolute;
+    left: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(255, 193, 7, 0.4);
+}
+
+/* Sun icon (using pseudo-elements for a simple design) */
+.toggle-slider::before {
+    content: '☀'; /* Unicode for a sun icon */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+}
+
+/* When toggled to the right */
+.toggle-switch.active {
+    background-color: #ffe082; /* Light yellow for active state */
+}
+
+.toggle-switch.active .toggle-slider {
+    left: 35px; /* Moves to the right */
+}
+
+/* Add cursor pointer for interaction */
+.toggle-switch:hover {
+    cursor: pointer;
+}

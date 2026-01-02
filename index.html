@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Joshua Balobalo | Web Developer Portfolio</title>
+
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+        <nav class="nav-menu-grid">
+            <div class="brand">
+                    <p class="page-name"> Developer <span class="name"> Josh </span> </p>
+            </div>
+            <ul class="nav-menu">
+                <li> <a href="#self-intro" class="nav-link"> HOME </a> </li> 
+               <!-- <li> <a href="#services" class="nav-link"> SERVICES </a> </li> 
+                <li> <a href="#skills" class="nav-link"> SKILLS </a> </li> -->
+                <li> <a href="#about" class="nav-link"> ABOUT </a> </li>
+                <li> <a href="#portfolio" class="nav-link"> PORTFOLIO </a> </li> 
+                <li> <a href="#Certificate" class="nav-link"> CERTIFICATE </a> </li>
+                <li> <a href="#contact" class="nav-link"> CONTACT </a> </li> 
+            </ul>
+        </nav>
+
+        <div class="self-intro" id="self-intro">
+            <div>
+                <span class="greetings"> Ready to Innovate?</span>
+                
+                <h1> UX/UI Designer  <br> & Front End Developer </h1>
+                    
+                <p class="descriptions"> 
+                    I am an aspiring Web Graphic Designer from the Philippines, <br>
+                    I am passionate about Graphic Designs and Web Development. <br>
+                    Ready to bring your vision to life with my creative design architectures! <br>
+                </p>
+
+                <div class="intro-buttons">
+                  <button class="see-my-works-button" id="projectsBtn">
+                    Projects <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </button>
+
+                  <button class="see-my-works-button" id="contactBtn">
+                    Contact Me <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </button>
+                </div>
+
+                        <!-- JS for scroll button -->
+                        <script>
+                          document.addEventListener('DOMContentLoaded', function () {
+                            const projectsBtn = document.getElementById('projectsBtn');
+                            const contactBtn  = document.getElementById('contactBtn');
+                            const portfolio   = document.getElementById('portfolio'); // section id in your HTML
+                            const contact     = document.getElementById('contact');   // section id in your HTML
+
+                            if (projectsBtn && portfolio) {
+                              projectsBtn.addEventListener('click', function (e) {
+                              e.preventDefault();
+                              portfolio.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                             });
+                            } else {
+                              console.warn('Projects button or portfolio section not found.');
+                            }   
+
+                            if (contactBtn && contact) {
+                              contactBtn.addEventListener('click', function (e) {
+                              e.preventDefault();
+                              contact.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                             });
+                            } else {
+                              console.warn('Contact button or contact section not found.');
+                            }
+                          });
+                        </script>
+
+            </div>
+            
+                <div class="opening"> 
+                 <div class="gif-circle">
+                   <img src="images/1674617947228.gif" 
+                     alt="Opening Animation">
+                 </div>
+                </div>
+
+        </div>
+
+        <!-- <div class="services-grid-container" id="services">
+            <div class="services-grid-1">
+                <span class="badge-label">SERVICES</span>
+                <h1> What Am I Providing</h1>
+                <p> I offer 100% customized, fully built, and resposive designs. </p>
+            </div>
+
+            <div class="services-grid-2">
+                <div class="services-container">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <span class="header"> UX/UI Research</span>
+                    <p> Study the process of systematically studying a product's target audience to understand 
+                        their needs, behaviors, and pain points, gathering insights through various methods like interviews, 
+                        surveys, and usability testing, to inform the design of a user interface (UI) that creates a positive user
+                         experience (UX) on a product or service.</p>
+                </div>
+
+                <div class="services-container">
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <span class="header"> UX/UI Designing </span>
+                    <p>The process of creating digital products (like websites and apps) that are not only visually appealing 
+                        but also intuitive and easy for users to interact with, focusing on both the overall user experience (UX) 
+                        and the visual elements of the interface (UI) they see and interact with.</p>
+                </div>
+                
+                <div class="services-container">
+                    <i class="fa-solid fa-code"></i>
+                    <span class="header"> Front-End Development </span>
+                    <p> The practice of creating the visual user interface of a website or application, 
+                        including elements like buttons, text, and images, using languages like HTML, CSS, and JavaScript, 
+                        which users directly interact with when they visit a site.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="skills-grid-container" id="skills">
+            <div class="skills-grid-1">
+                <span class="badge-label">SKILLS</span>
+                
+            </div>
+
+            <div class="skills-grid-2">
+                <div class="skills-container">
+                    <img src="images/figma-icon.svg">
+                </div>
+
+                <div class="skills-container">
+                    <img src="images/adobe-xd-2.svg">
+                </div>
+                
+                <div class="skills-container">
+                    <img src="images/html-1.svg">
+                </div>
+               
+                
+                <div class="skills-container">
+                    <img src="images/css-3.svg">
+                </div>
+
+                <div class="skills-container">
+                    <img src="images/javascript-1.svg">
+                </div>
+
+            </div>
+        </div> -->
+
+            
+        </div>
+
+        <div class="about-grid-container" id="about">
+            <div class="about-grid-1">
+                <span class="badge-label">ABOUT</span>
+                
+            </div>
+
+            <div class="about-grid-2">
+
+                <div class="about-container">
+                    <h2 class="Hi-There"> Hello! I'm <br>
+                    <span class="dev-name"> Joshua Balobalo</span></h2>
+                    
+
+                    <span class="intro">
+                        Hi there! I'm an aspiring Web Graphic Designer <br>
+                        with a passion for crafting visuals and user-friendly digital experiences. <br>
+                        I specialize in bringing creative visions to life through innovative design architectures, <br>
+                        Whether it's a sleek website, eye-catching graphics, or a seamless user interface, <br>
+                        I'm here to make your ideas stand out. <br>
+                    </span>
+
+                    <br>
+                        
+                    <button class="downloadButton" id="downloadButton">Download CV</button>
+    
+                        <script>
+                            document.getElementById("downloadButton").addEventListener("click", function () {
+                                // Create an anchor element
+                                const link = document.createElement("a");
+                    
+                                // Set the file URL (can be local or hosted)
+                                link.href = "https://drive.google.com/file/d/1GN6cUrkOLnzpnDT1WFV7lH0vi2M9AgFr/view"; // Replace with your file URL
+                    
+                                // Set the download attribute with a default file name
+                                link.download = "https://drive.google.com/file/d/1GN6cUrkOLnzpnDT1WFV7lH0vi2M9AgFr/view"; // Replace with your desired file name
+                    
+                                // Trigger the download
+                                link.click();
+                            });
+                        </script> 
+                </div>
+
+                <div class="about-container">
+                    <img src="images/profile1.jpg">
+                </div>
+
+            </div>
+
+            <div class="about-grid-3">
+                <div class="Total-Projects">
+                   <div class="icon-circle">
+                    <i class="fa-brands fa-dev"></i> <br> <br>
+                   </div>
+                    <span>Total Projects</span> <br>
+                    <span>Total Innovative Web Solutions Crafted</span> 
+                </div>
+
+                <div class="Certifications">
+                  <div class="icon-circle">
+                    <i class="fa-solid fa-certificate"></i> <br> <br> 
+                  </div>
+                    <span>Certificates</span> <br>
+                    <span>Professional Skills Validated</span> 
+                </div>
+
+                <div class="Years-of-Experience">
+                  <div class="icon-circle">
+                    <i class="fa-solid fa-calendar-days"></i> <br> <br>
+                  </div>
+                    <span>Years of Experience</span> <br> 
+                    <span>Continous Learning Journey</span> 
+                </div>
+
+                <div class="Skills">
+                  <div class="icon-circle">
+                    <i class="fa-solid fa-brain"></i> <br> <br>
+                  </div>
+                    <span>Experties</span> <br> 
+                    <span>Ui Designing - Figma & Canva</span> <br>
+                    <span>Language - HTML, Python, CSS, JS & Tailwind</span>
+                </div>
+
+            </div>
+
+            <!-- ✅ Skills moved here
+            <div class="skills-grid-container" id="skills">
+                <div class="skills-grid-1">
+                   <span class="badge-label">SKILLS</span>
+                 </div>
+
+                <div class="skills-grid-2">
+                   <div class="skills-container"><img src="images/figma-icon.svg"></div>
+                   <div class="skills-container"><img src="images/adobe-xd-2.svg"></div>
+                   <div class="skills-container"><img src="images/html-1.svg"></div>
+                   <div class="skills-container"><img src="images/css-3.svg"></div>
+                   <div class="skills-container"><img src="images/javascript-1.svg"></div>
+                </div>
+            </div> -->
+
+
+        </div>
+
+        <div class="portfolio-grid-container" id="portfolio">
+            <div class="portfolio-grid-1">
+                <span class="badge-label">PORTFOLIO</span>
+                <h1> Featured Projects</h1>
+                <p> Explore my journey through projects, each representing a milestone on my continious learning path. </p>
+            </div>
+
+            <div class="portfolio-grid-2">
+
+                <div class="portfolio-container">
+                  <span class="header">CyberShield </span>
+                  <img src="images/Cybershield1.png">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                  <button class="Details" onclick="openModal(['images/Cybershield1.png','images/Cybershield2.png'])">
+                    View Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </button>
+                </div>
+
+                <div class="portfolio-container">
+                  <span class="header"> Flow Genius </span>
+                  <img src="images/Flowgenius1.png">
+                  <p>FlowGenius is your smart diagram generator. just type your idea, and it instantly transforms your prompt into the perfect diagram you need.</p>
+                  <p>Design & Develop via figma, Python, API, CSS and JS </p>
+                  <button class="Details" onclick="openModal
+                  (['images/Flowgenius1.png','images/Flowgenius2.png','images/Flowgenius3.png','images/Flowgenius4.png','images/Flowgenius5.png',
+                  'images/Flowgenius6.png','images/Flowgenius7.png','images/Flowgenius8.png','images/Flowgenius9.png'])">
+                    View Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </button>
+                </div>
+
+                <!-- <div class="portfolio-container">
+                  <span class="header"> Car Rent </span>
+                  <img src="images/CARWEBSITE.png">
+                  
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                  <button class="Details" onclick="openModal(['images/CARWEBSITE.png','images/MATCHFOUNDSYSYSTEM.png','images/TREETIFYWEBSITE.png'])">
+                    View Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </button>
+                </div> -->
+
+                <div class="portfolio-container">
+                  <span class="header"> Emergens </span>
+                  <img src="images/emergens1.png">
+                  <p>Emergens is your quick-access handbook, instantly provides the contact information of Siniloan’s important people when you need help the most</p>
+                  <p>Design & Develop via Figma, HTML, CSS and JS</p>
+                  <button class="Details" onclick="openModal
+                  (['images/emergens1.png','images/emergens2.png','images/emergens3.png','images/emergens4.png','images/emergens5.png',
+                  'images/emergens6.png','images/emergens7.png','images/emergens8.png','images/emergens9.png','images/Emergens11.png'])">
+                    View Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </button>
+                </div>
+            </div>
+
+        <!-- Modal (hidden by default) -->
+        <div id="projectModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-content-wrapper">
+                <span class="prev" onclick="changeSlide(-1)">&#10094;</span>
+                <img class="modal-content" id="modalImage">
+                <span class="next" onclick="changeSlide(1)">&#10095;</span>
+            </div>
+        </div>
+
+        <script>
+        let currentImages = [];
+        let currentIndex = 0;
+
+        function openModal(images) {
+         currentImages = images;
+         currentIndex = 0;
+         const modal = document.getElementById("projectModal");
+         const modalImg = document.getElementById("modalImage");
+
+         modal.style.display = "block";
+         modalImg.src = "";  
+         modalImg.src = currentImages[currentIndex];
+         console.log("Loaded image:", currentImages[currentIndex]);
+        }
+
+        function closeModal() {
+         document.getElementById("projectModal").style.display = "none";
+        }
+        function changeSlide(direction) {
+          currentIndex += direction;
+          if (currentIndex < 0) currentIndex = currentImages.length - 1;
+          if (currentIndex >= currentImages.length) currentIndex = 0;
+          document.getElementById("modalImage").src = currentImages[currentIndex];
+        
+        }
+        </script>
+            <!-- <div class="portfolio-grid-3">
+                <a href="html/portfolio.html" target="_blank">See All </a>
+            </div> -->
+
+        </div>
+
+        <div class="certificate-grid-container" id="Certificate">
+           <div class="certificate-grid-1">
+             <span class="badge-label">CERTIFICATE</span>
+           </div>
+
+           <div class="certificate-grid-2">
+              <div class="certificate-left">
+                <h1> My Certificates </h1>
+                <p>
+                These certificates showcase my continuous learning journey and dedication
+                to professional growth in web development and design.
+                </p>
+              </div>
+
+              <div class="certificate-right">
+               <div class="certificate-box">
+                <span class="prev" onclick="changeCert(-1)">&#10094;</span>
+                <img id="certificateImage" src="images/cert1.png" alt="Certificate">
+                <span class="next" onclick="changeCert(1)">&#10095;</span>
+               </div>
+              </div>
+            </div>
+        </div>
+
+        <script>
+        const certificates = [
+          "images/cert1.png" ,
+          "images/cert2.png",
+          "images/cert3.png",
+          "images/cert4.png"
+        ];
+
+        let certIndex = 0;
+        function changeCert(direction) {
+          certIndex += direction;
+          if (certIndex < 0) certIndex = certificates.length - 1;
+          if (certIndex >= certificates.length) certIndex = 0;
+          document.getElementById("certificateImage").src = certificates[certIndex];
+        }
+        </script>
+
+
+
+
+<div class="contact-grid-container">
+    <div class="contact-grid-1">
+        <span class="badge-label">CONTACT</span>
+    </div>
+
+    <div class="contact-grid-2">
+        <div class="contact-container" id="contact">
+
+            <div class="contact-item">
+                <p>Let's work together on your next project!</p>
+                    
+                <div class="contact">
+                    <i class="fa-solid fa-location-dot" style="padding-left: 30px;"> <span class="contact-info">&nbsp;&nbsp;&nbsp; Laguna, Philippines</span></i>
+                </div>
+
+                <div  class="contact">
+                    <i class="fa-regular fa-envelope" style="padding-left: 30px;"> <span class="contact-info">&nbsp;&nbsp;&nbsp; Joshuabalobalo15@gmail.com</span> </i>
+                </div>
+
+                <div  class="contact">
+                    <i class="fa-solid fa-phone" style="padding-left: 30px;"> <span class="contact-info">&nbsp;&nbsp;&nbsp; +063 4444 222 111 </span> </i>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <form id="contact-form">
+            
+                    <input type="text" id="itemName" name="itemName" placeholder="Name*"> <br> <br>
+            
+                    <input type="text" id="itemCategory" name="itemCategory" placeholder="Email*"> <br> <br>
+            
+                    <input type="text" id="itemId" name="itemId" placeholder="Type your message here*"> <br> <br>
+            
+                    <button type="submit" id="submit"> Send Message </button>
+                </form>
+            </div>
+
+    </div>
+</div>
+
+    </body>
+
+    <footer>
+
+        <div class="footer-grid-1">
+            <a href="" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a> 
+            
+            <a href="" target="_blank"> 
+                <i class="fa-brands fa-facebook"></i>
+            </a> 
+            
+            <a href="" target="_blank">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+    
+            <a href="" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+    
+    
+            <a href="" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+
+        <div class="footer-grid-2">
+            <span class="copyright"> Designed and Developed by Josh. Alrights Reserved. 2024.</span>
+        </div>
+
+        <!-- <div class="theme-toggle">
+            <div class="toggle-switch">
+                <div class="toggle-slider"></div>
+            </div>
+        </div>
+        <script>
+            document.querySelector('.toggle-switch').addEventListener('click', function () {
+                this.classList.toggle('active'); // Adds/removes the active class
+                document.body.classList.toggle('light-mode'); // For changing the theme globally
+            });
+
+        </script> -->
+        
+    </footer>   
+
+        <!-- Font Awesome Kits -->
+        <script src="https://kit.fontawesome.com/cd338a0c88.js" crossorigin="anonymous"></script>
+
+</html>
